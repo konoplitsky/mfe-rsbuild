@@ -1,0 +1,11 @@
+./idea
+
+# host
+host/node_modules
+host/dist
+host/.mf
+
+#remote
+remote/node_modules
+remote/dist
+remote/.mf
