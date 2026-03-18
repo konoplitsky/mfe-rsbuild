@@ -1,5 +1,5 @@
-import { create, type UseBoundStore } from 'zustand';
-import { StoreApi } from 'zustand'
+import { create } from 'zustand';
+import type { StoreApi, UseBoundStore } from 'zustand'
 
 type CounterState = {
   counter: number;
@@ -14,7 +14,6 @@ declare global {
 
 const GLOBAL_STORE_KEY = '__GLOBAL_COUNTERS_STORE__';
 
-
 const useCounterStore = window[GLOBAL_STORE_KEY] ?? create<CounterState>((set) => ({
   counter: 0,
   increment: () => set((state) => ({ counter: state.counter + 1 })),
@@ -23,6 +22,8 @@ const useCounterStore = window[GLOBAL_STORE_KEY] ?? create<CounterState>((set) =
 if (!window[GLOBAL_STORE_KEY]) {
   window[GLOBAL_STORE_KEY] = useCounterStore;
 }
+
+console.log('@@@store', window)
 
 export { useCounterStore };
 export default useCounterStore;

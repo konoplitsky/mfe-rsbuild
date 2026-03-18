@@ -1,6 +1,7 @@
 import './App.css';
 import { Link } from 'react-router-dom'
 import useCounterStore from "./stores/countersStore.ts";
+import AboutPage from 'remote/About'
 
 const App = () => {
     const { counter, increment } = useCounterStore()
@@ -11,6 +12,8 @@ const App = () => {
         <Link to='/remote'>Перейти на remote страницу</Link>
         <div>Счетчик: {counter}</div>
         <button onClick={increment}>+</button>
+
+        <AboutPage/>
     </div>
   );
 };

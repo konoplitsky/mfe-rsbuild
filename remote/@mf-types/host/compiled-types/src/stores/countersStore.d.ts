@@ -1,5 +1,4 @@
-import { type UseBoundStore } from 'zustand';
-import { StoreApi } from 'zustand';
+import type { StoreApi, UseBoundStore } from 'zustand';
 type CounterState = {
     counter: number;
     increment: () => void;

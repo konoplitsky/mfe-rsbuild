@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "dev:host": "cd host && npm run dev",
+    "dev:remote": "cd remote && npm run dev",
+    "dev":  "concurrently \"npm run dev:host\" \"npm run dev:remote\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
