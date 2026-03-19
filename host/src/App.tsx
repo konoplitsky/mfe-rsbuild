@@ -1,19 +1,28 @@
 import './App.css';
-import { Link } from 'react-router-dom'
-import useCounterStore from "./stores/countersStore.ts";
-import AboutPage from 'remote/About'
+import { Link } from 'react-router-dom';
+import useStore from '@happycode-core/counter-store';
+
+import AboutPage from 'remote/About';
 
 const App = () => {
-    const { counter, increment } = useCounterStore()
+  const { count, increment } = useStore();
 
   return (
-    <div style={{border: '1px solid green'}}>
-        <h1>ХОСТ</h1>
-        <Link to='/remote'>Перейти на remote страницу</Link>
-        <div>Счетчик: {counter}</div>
-        <button onClick={increment}>+</button>
+    <div className='mf-host-page'>
+      <section className='mf-host-card'>
+        <h1 className='mf-host-title'>HOST</h1>
+        <Link className='mf-host-link' to='/remote'>
+          Перейти на remote страницу
+        </Link>
+        <div className='mf-host-counter'>Счетчик: {count}</div>
+        <button className='mf-host-button' onClick={increment} type='button'>
+          +
+        </button>
+      </section>
 
-        <AboutPage/>
+      <section className='mf-remote-slot'>
+        <AboutPage />
+      </section>
     </div>
   );
 };

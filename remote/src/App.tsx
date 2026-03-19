@@ -1,10 +1,10 @@
 import './App.css';
-import Provider from "./components/ProviderComponent.tsx";
+import Provider from './components/ProviderComponent.tsx';
 
 const App = () => {
   return (
-    <div className="content">
-        <Provider/>
+    <div className='mf-remote-shell'>
+      <Provider />
     </div>
   );
 };

@@ -1,10 +1,18 @@
+import useStore from '@happycode-core/counter-store';
+import '../components/ProviderComponent.css';
+
 const About = () => {
-    return (
-        <div>
-            <h1>About page</h1>
-            <div>Count: 5</div>
-        </div>
-    );
+  const { count, increment } = useStore();
+
+  return (
+    <div className='mf-remote-card'>
+      <h2 className='mf-remote-title'>REMOTE</h2>
+      <div className='mf-remote-counter'>Счетчик: {count}</div>
+      <button className='mf-remote-button' onClick={increment} type='button'>
+        +
+      </button>
+    </div>
+  );
 };
 
 export default About;

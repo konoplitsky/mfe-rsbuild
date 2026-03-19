@@ -1,15 +1,14 @@
 body {
   margin: 0;
-  color: #fff;
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  background-image: linear-gradient(to bottom, #020917, #101725);
+  font-family: Inter, Arial, sans-serif;
+  color: #e5e7eb;
+  background: #0f172a;
 }
 
-.content {
-  display: flex;
+.mf-remote-shell {
   min-height: 100vh;
-  line-height: 1.1;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
+  padding: 24px;
+  display: grid;
+  gap: 16px;
+  align-content: start;
 }
