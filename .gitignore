@@ -9,3 +9,7 @@ host/.mf
 remote/node_modules
 remote/dist
 remote/.mf
+
+remote2/node_modules
+remote2/dist
+remote2/.mf

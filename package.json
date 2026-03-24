@@ -2,7 +2,8 @@
   "scripts": {
     "dev:host": "cd host && npm run dev",
     "dev:remote": "cd remote && npm run dev",
-    "dev": "concurrently \"npm run dev:host\" \"npm run dev:remote\""
+    "dev:remote2": "cd remote2 && npm run dev",
+    "dev": "concurrently \"npm run dev:host\" \"npm run dev:remote\" \"npm run dev:remote2\""
   },
   "devDependencies": {
     "@happycode-core/prettier": "^1.0.0",

@@ -1,5 +1,5 @@
 {
-  "name": "host",
+  "name": "remote2",
   "private": true,
   "version": "1.0.0",
   "scripts": {
@@ -8,12 +8,9 @@
     "preview": "rsbuild preview"
   },
   "dependencies": {
-    "@happycode-core/counter-store": "^1.0.1",
     "@module-federation/bridge-react": "^2.2.3",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^6.10.0",
-    "zustand": "^5.0.12"
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@module-federation/enhanced": "^2.2.3",
@@ -22,7 +19,6 @@
     "@rsbuild/plugin-react": "^1.4.5",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
-    "typescript": "^5.7.2",
-    "webpack": "^5.105.4"
+    "typescript": "^5.7.2"
   }
 }
