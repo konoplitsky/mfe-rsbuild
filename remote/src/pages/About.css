@@ -30,3 +30,13 @@
 .mf-remote-button:hover {
   background: #374151;
 }
+
+.mf-remote-link {
+  color: #93c5fd;
+  text-decoration: none;
+}
+
+.mf-remote-link:hover {
+  text-decoration: underline;
+}
+

@@ -13,7 +13,7 @@ const About = () => {
         +
       </button>
 
-      <Link to='/test'>Тест</Link>
+      <Link className='mf-remote-link' to='/test'>Тест</Link>
     </div>
   );
 };

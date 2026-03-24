@@ -1,4 +1,4 @@
-import { instance } from '../../lib/instamceLazy.ts';
+import { instance } from '../../lib/instanceLazy.ts';
 import { ErrorFallback } from '../remoteComponents.tsx';
 
 export const ContactsPage = instance?.createLazyComponent({
